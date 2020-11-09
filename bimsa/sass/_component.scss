@@ -1,0 +1,379 @@
+.nav{
+    animation: movebottom 1s .8s ease-out both ;
+
+    &__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        text-decoration: none;
+    }
+    &__item{
+        list-style: none;
+        font-family: inherit;
+        text-align: center;
+        vertical-align: center;
+        padding: .5rem;
+    }
+
+    &__logo{
+        display: flex;
+        text-align: end;
+        text-decoration: none;
+        margin: 0rem 5rem;
+        position: relative;
+        margin-right: 15rem;
+        &-text{
+            color:var(--color-cyan-1);
+            font-weight: 600;
+            font-size: 3.5rem;
+            align-self: flex-end;
+        }
+    }
+
+    &__profile{
+        display: flex;
+        align-content: flex-end;
+        padding-top: 1rem;
+        margin: 0 5rem;
+        cursor: pointer;
+
+        &-img{
+            display: block;
+            margin-left: 1rem;
+            height: 3rem;
+        }
+
+        &-text{
+            text-align: end;
+
+        }
+    }
+
+}
+.landing{
+    .landing__img{
+        height: 100vh;
+        // position: relative;
+        background-image: url(../img/asset-1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        
+    }
+    &__img-logo{
+        height: 50rem;
+        width: 50rem;
+        margin-right: 4.5rem;
+        right: 35%;
+        cursor: pointer;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-animation: slide-tr 2s  .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-tr 2s .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    &__table{
+        position: relative;
+        height: 40rem;
+        width: 80rem;
+        margin:0 auto;
+        overflow: hidden;
+        border-radius: 1.5rem 1.5rem 2rem 2rem;
+        background-color: blanchedalmond;
+
+
+        &__up{
+            height: 40rem;
+            width: 80rem;
+            // position: absolute;
+            // top: 9rem;
+            border-top: 5rem solid var(--color-cyan-1) !important;
+            background-color: rgba(218, 218, 218, .9);
+            animation: visible 1s 1s ease-in both;
+            border-collapse: collapse;
+            table-layout: fixed;
+            tr:not(:last-child){
+                border-bottom: 3px solid var(--color-cyan-1);
+            }
+            td:not(:last-child){
+                border-left: 3px solid var(--color-cyan-1);
+            }
+            &__data{
+                font-size: 1.7rem;
+                font-weight: 200;
+                vertical-align: text-top;
+                text-align: center;
+                color: var(--color-cyan-2);
+            &:hover{
+                background-color: rgb(238, 238, 238);
+            }
+            &:focus{
+                transform: scale(1.1);
+            }
+            &__link{
+                &:hover{
+                    display: block;
+                    transform: scale(1.1);
+                }
+            }
+            span{
+                display: block;
+                animation:moveInbottom 1.5s .8s ease-out;
+            }
+        }
+    }
+}
+    &__two-circles{
+        animation:visible 1s 1s ease-out both;
+        
+        .circle1{
+            width: 8.8rem;
+            height: 8.8rem;
+            top: 50rem;
+            right: 10rem;
+            position: fixed;
+            border-radius: 50%;
+            border:.5rem dashed var(--color-cyan-1);
+            background-color: whitesmoke;
+        }
+        .circle2{
+            top: 50rem;
+            left: 10rem;
+            position: fixed;
+            border-radius: 50%;
+            border:.5rem dashed var(--color-cyan-1);
+            background-color: whitesmoke;
+        }
+        span{
+            color: whitesmoke;
+            top: 50rem;
+            right: 20rem;
+            position: fixed;
+        }
+
+    }
+}
+
+.main__panel{
+    &__title{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: var(--color-cyan-2);
+        h1{
+            font-weight: 600;
+            font-size: 3.5rem;
+        }
+        &-gray{
+            color: var(--color-grey-dark-3);
+            text-align: center;
+        }
+    }
+    &__logo{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5rem auto;
+        a:hover{
+            transform: scale(1.1);
+        }
+        &_block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            span{
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+    &_center{
+        width: 80%;
+        height: 23%;
+        background-color: rgb(247, 247, 247);
+        border-radius: 5rem;
+        margin: 3rem auto;
+    }
+    // &blue_circle{
+    //     position: absolute;
+    //     top: 5rem;
+    // }
+
+
+    &_table{
+        height: 30rem;
+        width: 60rem;
+        position: absolute;
+        top: 55rem;
+        right: 20rem;
+        td{
+            padding: .5rem;
+        }
+        label{
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding-right: 2rem;
+            color: var(--color-cyan-2);
+        }
+        input{
+            outline: none;
+            height: 4rem;
+            width: 20rem;
+            border:.1rem solid var(--color-cyan-2);
+            border-radius: .8rem;
+            padding:1rem ;
+            box-shadow: 0px 3px 11px -4px #000000;
+        }
+    }
+    svg{
+        height:80rem; 
+        width:75rem;
+        perspective: 500rem;
+        position: relative;
+        ellipse{
+            fill:white;
+            stroke:var(--color-cyan-3);
+            stroke-width:2;
+        }
+        // &:hover{
+        //     animation:spin 5s ease-in 3s infinite both;
+        // }
+    }
+}
+.center__oval{
+    height: 30rem;
+    width: 90rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius:50%;
+    border:2rem solid darkgreen;
+    // &:hover{
+    //     animation-name: spin;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 1s;
+    //     animation-timing-function: linear;
+    //     position: relative;
+    // }
+
+
+    // border: 16px solid #f3f3f3;
+    // border-radius: 50%;
+    // border-top: 16px solid blue;
+    // border-bottom: 16px solid blue;
+    // width: 120px;
+    // height: 120px;
+    // -webkit-animation: spin 2s linear infinite;
+    // animation: spin 2s linear infinite;
+
+    &__logo-1{
+        width: 10rem;
+        height: 10rem;
+        background-color: rgb(236, 236, 236);
+        border-radius: 50%;
+        padding:1.5rem ;
+        position: absolute;
+        right: 20rem;
+        transform: translate(80%, 30%);
+        }
+    &__logo-2{
+        width: 10rem;
+        height: 10rem;
+        background-color: rgb(236, 236, 236);
+        border-radius: 50%;
+        padding:1.5rem ;
+        position: absolute;
+        right: 10rem;
+        top: 10rem;
+        transform: translate(20%, 100%);
+    }
+    &__logo-3{
+        width: 10rem;
+        height: 10rem;
+        background-color: rgb(236, 236, 236);
+        border-radius: 50%;
+        padding:1.5rem ;
+        position: absolute;
+        right: 15rem;
+        top: 10rem;
+        transform: translate(-180%, 150%);
+        border: none;
+    }
+    &__logo-4{
+        width: 10rem;
+        height: 10rem;
+        background-color: rgb(236, 236, 236);
+        border-radius: 50%;
+        padding:1.5rem ;
+        position: absolute;
+        right: 45rem;
+        top: 10rem;
+        transform: translate(-140%, 110%);
+        border: none;
+    }
+    &__left__btn{
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(241, 186, 4);
+        border-radius: 50%;
+        position: absolute;
+        padding:1rem ;
+        right:42rem;
+        top: 23.5rem;
+        transform: translate(-170%, 150%);
+        &:hover{
+            background-color: rgb(202, 202, 202);
+        }
+    }
+    &__right__btn{
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(241, 186, 4);
+        border-radius: 50%;
+        position: absolute;
+        padding:1rem ;
+        right:21rem;
+        top: 23.5rem;
+        transform: translate(-170%, 150%);
+        &:hover{
+            background-color: rgb(202, 202, 202);
+        }
+    }
+
+}
+
+
+
+
+
+
+
+//////////////////////ANIMATIONS//////////////////////////////
+
+// @keyframes spin{
+//   from {
+//     transform: rotate(0);
+//     transform-origin: center center;
+//   }
+//   to {
+//     transform: rotate(360deg);
+//     transform-origin: center center;
+
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+  

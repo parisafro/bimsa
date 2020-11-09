@@ -1,0 +1,46 @@
+@keyframes slide-tr {
+
+    0%{
+        -webkit-transform: translateY(50) translateX(0);
+        transform: translateY(50) translateX(0);
+        background-image: url("../img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-5afd8076374476.3266053715265629342264@2x.png");
+    }
+
+    to {
+        -webkit-transform: translateY(-64%) translateX(143%);
+        transform: translateY(-64%) translateX(143%);
+        background-image: url("../img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-1.png");
+    }
+}
+
+
+
+@keyframes visible{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInbottom{
+    0%{
+        transform: translateY(-90%);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+@keyframes movebottom{
+    from{
+        display: none;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

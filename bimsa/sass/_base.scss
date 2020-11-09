@@ -1,0 +1,68 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+:root{
+
+    --color-grey-dark-0:rgb(248, 248, 248);
+    --color-grey-dark-1: #999999cc;
+    --color-grey-dark-2: #a1a1a180;
+    --color-grey-dark-3: #777;
+    --color-grey-dark-4: #333;
+    --color-grey-dark-5: #191919;
+    
+    --color-cyan-1:#0abde3;
+    --color-cyan-2:#0597b8;
+    --color-cyan-3:#017f9b;
+}
+
+@font-face{
+    font-family: 'Ykan';
+    src: url(../Yekan/Yekan/Yekan.eot);
+    src: url(../Yekan/Yekan/Yekan.ttf);
+    src: url(../Yekan/Yekan/Yekan.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px= 1rem//
+}
+
+body{
+    font-family: 'Ykan';
+    font-size: 2rem;
+    font-weight: 300;
+    direction: rtl;
+    background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+

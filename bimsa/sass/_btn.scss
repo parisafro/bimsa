@@ -1,0 +1,39 @@
+.btn{
+    font-family: 'Ykan';
+    font-size: 2rem;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.blue-btn{
+    height: 5rem;
+    width:15rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    &:hover{
+        background-color: var(--color-cyan-1);
+    }
+}
+
+.blue-btn-submit{
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: var(--color-cyan-2);
+    width: 25rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 85rem;
+    left: 40rem;
+    &:hover{
+        background-color: var(--color-cyan-3);
+    }
+
+}
+
+
