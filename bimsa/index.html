@@ -16,66 +16,68 @@
     </head>
     <body>
         <header>
-            <nav class="nav">
-                <ul class="nav__items">
-                    <li class="nav__item">
-                        <a href="#" class="nav__logo">
-                            <div class="nav__logo-img"></div>
-                            <span class="nav__logo-text">بیمسا</span>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                    <button class="btn blue-btn">
-                        <a href="#">
-                                انواع بیمه ها
-                        </a>
-                    </button>
-                    </li>
-
-                    <li class="nav__item">
-                        <button class="btn blue-btn">
-                            <a href="#">
-                                فروش سازمانی
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="nav__item">
-                        <button class="btn blue-btn">
-                            <a href="#">
-                                بیمه های همکار
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="nav__item">
-                        <button class="btn blue-btn">
-                            <a href="#">
-                                بلاگ
-                            </a>
-                        </button>
-                    </li>
-
-                    <li class="nav__item">
-                        <button class="btn blue-btn">
-                            <a href="#">
-                             تماس با ما
-                            </a>
-                        </button>
-                    </li>
-
-                    <a class="nav__profile">
-                        <img class="nav__profile-img" src="./img/person-1.png" alt="profile">
-                        <span class="nav__profile-text">حساب کاربری</span>
-                    </a>
-                </ul>
-            </nav>
             <div class="landing">
                 <div class="landing__img">
+                    <nav class="nav">
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#" class="nav__logo">
+                                    <div class="nav__logo-img"></div>
+                                    <span class="nav__logo-text">بیمسا</span>
+                                </a>
+                            </li>
+        
+                            <li class="nav__item">
+                            <button class="btn blue-btn">
+                                <a href="#">
+                                        انواع بیمه ها
+                                </a>
+                            </button>
+                            </li>
+        
+                            <li class="nav__item">
+                                <button class="btn blue-btn">
+                                    <a href="#">
+                                        فروش سازمانی
+                                    </a>
+                                </button>
+                            </li>
+        
+                            <li class="nav__item">
+                                <button class="btn blue-btn">
+                                    <a href="#">
+                                        بیمه های همکار
+                                    </a>
+                                </button>
+                            </li>
+        
+                            <li class="nav__item">
+                                <button class="btn blue-btn">
+                                    <a href="#">
+                                        بلاگ
+                                    </a>
+                                </button>
+                            </li>
+        
+                            <li class="nav__item">
+                                <button class="btn blue-btn">
+                                    <a href="#">
+                                     تماس با ما
+                                    </a>
+                                </button>
+                            </li>
+        
+                            <a class="nav__profile">
+                                <img class="nav__profile-img" src="./img/person-1.png" alt="profile">
+                                <span class="nav__profile-text">حساب کاربری</span>
+                            </a>
+                        </ul>
+                    </nav>
+                    <div class="landing__img-log">
+                    </div>        
                     <div class="landing__img-logo">
                     </div>
-                        <div class="landing__table">
+                    <div class="landing__table">
                         <table class="landing__table__up">
                             <tbody>
                             <tr>
@@ -158,12 +160,22 @@
                     </table>
                     </div>
                     <div class="landing__two-circles">
-                        <a href="#">
-                            <img class="circle1" src="./img/service3.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img class="circle2" src="./img/service4.png" alt="">
-                        </a>
+                        <div class="circle_right">
+                            <a href="#">
+                                <img class="circle1" src="./img/service3.png" alt="">
+                                <span class="circle1-text">
+                                    گفت وگو با ما
+                                </span>
+                            </a>
+                        </div>
+                        <div class="circle_left">
+                            <a href="#">
+                                <img class="circle2" src="./img/service4.png" alt="">
+                                <span class="circle2-text">
+                                    تمدید
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,25 +297,35 @@
                         <button type="submit" class="btn blue-btn-submit">ثبت</button>
                     </form>
                 </div>
-                <h1 class="main__panel__title-gray">   بیمه های همکار</h1>
-                <div class="center__oval">
+                <h1 class="main__panel__title-gray"> بیمه های همکار</h1>
+                <!-- <div class="center__oval"> -->
 
-
-                    <div class="wheel">
+                    <!-- <svg>
+                        <ellipse cx="240" cy="100" rx="220" ry="50" style="fill:purple" />
+                    </svg> -->
+                    <div class="center__oval" >
+                        <svg class="wheel">
+                            <ellipse cx="240" cy="100" rx="220" ry="50" />
+                        </svg>
                         <div class="wheel__list">
+                          <!-- <div class="wheel__list__item">
+                            <img class="center__oval__logo-1" src="./img/NoPath - Copy (58)@2x.png" alt="">
+                          </div> -->
                           <div class="wheel__list__item">
-                            <span>Item 1</span></div>
+                            <img class="center__oval__logo-2" src="./img/NoPath - Copy (54)@2x.png" alt="">
+                          </div>
                           <div class="wheel__list__item">
-                            <span>Item 2</span></div>
+                            <img class="center__oval__logo-3" src="./img/NoPath - Copy (62).png" alt="">
+                          </div>
                           <div class="wheel__list__item">
-                            <span>Item 3</span></div>
+                            <img class="center__oval__logo-4" src="./img/NoPath - Copy (63).png" alt="">
+                          </div>
                           <div class="wheel__list__item">
-                            <span>Item 4</span></div>
-                          <div class="wheel__list__item">
-                            <span>Item 5</span></div>
-                          <div class="wheel__list__item">
+                            <img class="center__oval__logo-3" src="./img/NoPath - Copy (61)@2x.png" alt="">
+                          </div>
+                          <!-- <div class="wheel__list__item">
                             <span>Item 6</span></div>
-                        </div>
+                        </div> -->
                       </div>
 
                     <!-- <img class="center__oval__logo-1" src="./img/NoPath - Copy (53).png" alt="">
@@ -319,19 +341,113 @@
                     <!-- <img src="./img/NoPath - Copy (60)@2x.png" alt="">
                     <img src="./img/NoPath - Copy (52)@2x.png" alt="">
                     <img class="main__panel__center-oval-logo" src="./img/NoPath - Copy (55)@2x.png" alt=""> -->
-<!--                     
+                    <!--                     
                     <img src="./img/NoPath - Copy (63)@2x.png" alt="">
                     <img src="./img/NoPath - Copy (61)@2x.png" alt="">
                     <img  src="./img/NoPath - Copy (62)@2x.png" alt="">
                     <img src="./img/NoPath - Copy (53)@2x.png" alt="">
                     <img  src="./img/NoPath - Copy (62).png" alt=""> -->
-                </div>
+                <!-- </div> -->
 
             </div>
         </section>
-        <section>
-            
-        </section>
+        <footer>
+            <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 230">
+                <path fill="#0099ff" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,90.7C384,85,480,139,576,165.3C672,192,768,192,864,165.3C960,139,1056,85,1152,96C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <div class="main__footer">
+                <div class="main__footer-panels">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی شخص ثالث</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی بدنه</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی آتش سوزی </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی عمر </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی موتور سیکلت </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی درمان تکمیلی </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>بیمه ی مسافرتی </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main__footer__temp-logos">
+                        <li>
+                            <img class="main__footer__temp-logos-logo" src="./img/_temp-logo-samandehi.png" alt="">
+                            <img class="main__footer__temp-logos-logo" src="./img/_temp-logo-enamad.png" alt="">
+                        </li>
+                        <li>
+                            <img class="main__footer__temp-logos-social" src="./img/twitter@2x.png" alt="">
+                            <img class="main__footer__temp-logos-social" src="./img/twitter@2x.png" alt="">
+                            <img class="main__footer__temp-logos-social" src="./img/instagram-sketched@2x.png" alt="">
+                            <img class="main__footer__temp-logos-social" src="./img/telegram@2x.png" alt="">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>ورود به پنل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span> شرایط و قوانین </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span> سوالات متداول </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>همکاری با ما</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>تماس با ما </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>درباره ی ما</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span> فرصت های شغلی</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>تمام حقوق این سایت متعلق به شرکت بیمسا است.</p>
+            </div>
+        </footer>
+
         <script type="module" src="node_modules/spin.js/spin.js"></script>
     </body>
 </html>

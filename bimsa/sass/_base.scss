@@ -24,6 +24,7 @@ Grey dark 3: #999
     --color-grey-dark-3: #777;
     --color-grey-dark-4: #333;
     --color-grey-dark-5: #191919;
+
     
     --color-cyan-1:#0abde3;
     --color-cyan-2:#0597b8;
@@ -58,11 +59,16 @@ body{
     font-size: 2rem;
     font-weight: 300;
     direction: rtl;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
 a{
     text-decoration: none;
     color: currentColor;
 }
+
+li{
+    list-style: none;
+}
+
 

@@ -1,5 +1,5 @@
 .nav{
-    animation: movebottom 1s .8s ease-out both ;
+    animation: movebottom 1s 1.5s ease-out both ;
 
     &__items{
         display: flex;
@@ -55,14 +55,12 @@
 .landing{
     .landing__img{
         height: 100vh;
-        // position: relative;
         background-image: url(../img/asset-1.png);
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-
-        
+        background-repeat: no-repeat; 
     }
+
     &__img-logo{
         height: 50rem;
         width: 50rem;
@@ -72,25 +70,24 @@
         position: absolute;
         background-repeat: no-repeat;
         background-position: center;
-        -webkit-animation: slide-tr 2s  .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-tr 2s .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: slide-tr 2s  1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-tr 2s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     &__table{
         position: relative;
-        height: 40rem;
+        height: 45rem;
         width: 80rem;
         margin:0 auto;
         overflow: hidden;
         border-radius: 1.5rem 1.5rem 2rem 2rem;
-        background-color: blanchedalmond;
-
+        animation: visible .8s 1.8s ease-in both;
 
         &__up{
             height: 40rem;
             width: 80rem;
-            // position: absolute;
-            // top: 9rem;
+            position: absolute;
+            top: 5rem;
             border-top: 5rem solid var(--color-cyan-1) !important;
             background-color: rgba(218, 218, 218, .9);
             animation: visible 1s 1s ease-in both;
@@ -108,6 +105,9 @@
                 vertical-align: text-top;
                 text-align: center;
                 color: var(--color-cyan-2);
+                padding: 1.5rem;
+
+
             &:hover{
                 background-color: rgb(238, 238, 238);
             }
@@ -129,12 +129,37 @@
 }
     &__two-circles{
         animation:visible 1s 1s ease-out both;
-        
-        .circle1{
-            width: 8.8rem;
-            height: 8.8rem;
-            top: 50rem;
+        z-index: 5;
+        .circle_right{
+            width: 13rem;
+            height: 13rem;
+            top: 48rem;
             right: 10rem;
+            position: fixed;
+            border-radius: 50%;
+            border:.5rem dashed var(--color-cyan-1);
+            background-color: whitesmoke;
+        }
+        .circle1{
+            top: 50rem;
+            right: 13rem;
+            position: fixed;
+            &-text{
+                top: 53.5rem;
+                right: 10rem;
+                position: fixed;
+                padding: 1rem;
+                margin: 2rem;
+                font-size: 1.5rem;
+                color: var(--color-cyan-1);
+                text-align: center;
+            }
+        }
+        .circle_left{
+            width: 13rem;
+            height: 13rem;
+            top: 48rem;
+            left: 10rem;
             position: fixed;
             border-radius: 50%;
             border:.5rem dashed var(--color-cyan-1);
@@ -142,19 +167,19 @@
         }
         .circle2{
             top: 50rem;
-            left: 10rem;
+            left: 13rem;
             position: fixed;
-            border-radius: 50%;
-            border:.5rem dashed var(--color-cyan-1);
-            background-color: whitesmoke;
+            &-text{
+                top: 53.5rem;
+                left: 11.5rem;
+                position: fixed;
+                padding: 1rem;
+                margin: 2rem;
+                font-size: 1.5rem;
+                color: var(--color-cyan-1);
+                text-align: center;
+            }
         }
-        span{
-            color: whitesmoke;
-            top: 50rem;
-            right: 20rem;
-            position: fixed;
-        }
-
     }
 }
 
@@ -245,6 +270,7 @@
         // }
     }
 }
+
 .center__oval{
     height: 30rem;
     width: 90rem;
@@ -252,24 +278,11 @@
     margin: 0 auto;
     margin-top: 5rem;
     border-radius:50%;
-    border:2rem solid darkgreen;
-    // &:hover{
-    //     animation-name: spin;
-    //     animation-iteration-count: infinite;
-    //     animation-duration: 1s;
-    //     animation-timing-function: linear;
-    //     position: relative;
+    border:.5rem solid rgb(5, 180, 255);
+    // .wheel{
+    //     width: 80rem;
+    //     height: 80rem;
     // }
-
-
-    // border: 16px solid #f3f3f3;
-    // border-radius: 50%;
-    // border-top: 16px solid blue;
-    // border-bottom: 16px solid blue;
-    // width: 120px;
-    // height: 120px;
-    // -webkit-animation: spin 2s linear infinite;
-    // animation: spin 2s linear infinite;
 
     &__logo-1{
         width: 10rem;
@@ -344,8 +357,37 @@
             background-color: rgb(202, 202, 202);
         }
     }
-
 }
+
+// .center__oval{
+//     height: 30rem;
+//     width: 90rem;
+//     position: relative;
+//     margin: 0 auto;
+//     margin-top: 5rem;
+//     border-radius:50%;
+//     border:2rem solid darkgreen;
+    // &:hover{
+    //     animation-name: spin;
+    //     animation-iteration-count: infinite;
+    //     animation-duration: 1s;
+    //     animation-timing-function: linear;
+    //     position: relative;
+    // }
+
+
+
+
+// .center__oval{
+//     border: 16px solid #f3f3f3;
+//     border-radius: 50%;
+//     border-top: 16px solid blue;
+//     border-bottom: 16px solid blue;
+//     width: 120px;
+//     height: 120px;
+//     -webkit-animation: spin 2s linear infinite;
+//     animation: spin 2s linear infinite;
+// }
 
 
 
@@ -367,7 +409,76 @@
 //   }
 // }
 
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    .my-svg{
+        display: block;
+        position: relative;
+    }
+    .main__footer{
+        height: 40rem;
+        background-color: #0099ff;
+        position: relative;
+        &-panels{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 1.8rem;
+                line-height: 1.8;
+                color: white;
+                margin: 0 20rem;
+            }
+            // temp-logos{
+            //      display: flex;
+            //     background-color: yellowgreen;
+            //     temp-logo{
+            //         width: 15rem;
+            //         height: 15rem;
+            //         margin: 2.5rem;
+            //         background-color: blue;
+            //     }
+            // }
+            temp-logos{
+                background-color: blue;
+            }
+            img{
+                temp-logo{
+                    width: 12rem;
+                    height: 12rem;
+                    margin-top: 5rem;
+                }
+            }
+        }
 
+        &__temp-logos{
+            margin-top: 5rem;
+            &-logo{
+                width: 13rem;
+                height:13rem;
+            }
+            &-social{
+                width: 5rem;
+                height: 5rem;
+                color: transparent;
+                margin:2rem .5rem; 
+
+            }
+        }
+        p{
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 50px 50px 0 0;
+            background-color: rgb(253, 209, 12);
+            padding: 1rem 15rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    } 
+}
 
 
 

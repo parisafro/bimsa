@@ -1,12 +1,33 @@
 @keyframes slide-tr {
-
-    0%{
+    0% {
         -webkit-transform: translateY(50) translateX(0);
         transform: translateY(50) translateX(0);
         background-image: url("../img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-5afd8076374476.3266053715265629342264@2x.png");
     }
+    2%{
+        -webkit-transform: translateY(50) translateX(0);
+        transform: translateY(50) translateX(0);
+        opacity: 0;
+    }
 
-    to {
+    40%{
+        -webkit-transform: translateY(50) translateX(0);
+        transform: translateY(50) translateX(0);
+        opacity: 0;
+    }
+
+    55%{
+        -webkit-transform: translateY(50) translateX(0);
+        transform: translateY(50) translateX(0);
+        opacity: 5;
+    }
+    60%{
+        -webkit-transform: translateY(50) translateX(0);
+        transform: translateY(50) translateX(0);
+        opacity: 1;
+    }
+
+    100%{
         -webkit-transform: translateY(-64%) translateX(143%);
         transform: translateY(-64%) translateX(143%);
         background-image: url("../img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-1.png");
@@ -14,6 +35,20 @@
 }
 
 
+// @keyframes visible-hide{
+//     0%{
+//         opacity: 1;
+//     }
+//     60% {
+//         opacity: 0;
+//     }
+//     70%{
+//         opacity: 1;
+//     }
+//     100%{
+//         opacity: 0;
+//     }
+// }
 
 @keyframes visible{
     from {
