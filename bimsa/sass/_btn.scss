@@ -19,6 +19,20 @@
     }
 }
 
+.blue-btn-one{
+    height: 4rem;
+    width:16rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: var(--color-cyan-2);
+    position: absolute;
+    right:42rem;
+    &:hover{
+        background-color: var(--color-cyan-3);
+    }
+}
+
 .blue-btn-submit{
     border-radius: 8px;
     outline: none;

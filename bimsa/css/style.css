@@ -124,6 +124,18 @@ li {
   .blue-btn:hover {
     background-color: var(--color-cyan-1); }
 
+.blue-btn-one {
+  height: 4rem;
+  width: 16rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: var(--color-cyan-2);
+  position: absolute;
+  right: 42rem; }
+  .blue-btn-one:hover {
+    background-color: var(--color-cyan-3); }
+
 .blue-btn-submit {
   border-radius: 8px;
   outline: none;
@@ -352,84 +364,76 @@ li {
     stroke: var(--color-cyan-3);
     stroke-width: 2; }
 
-.center__oval {
-  height: 30rem;
-  width: 90rem;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 5rem;
-  border-radius: 50%;
-  border: 0.5rem solid #05b4ff; }
-  .center__oval__logo-1 {
-    width: 10rem;
-    height: 10rem;
-    background-color: #ececec;
+.slider {
+  height: 85vh; }
+  .slider .hi-slide {
+    height: 30rem;
+    width: 90rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
     border-radius: 50%;
-    padding: 1.5rem;
-    position: absolute;
-    right: 20rem;
-    transform: translate(80%, 30%); }
-  .center__oval__logo-2 {
-    width: 10rem;
-    height: 10rem;
-    background-color: #ececec;
-    border-radius: 50%;
-    padding: 1.5rem;
-    position: absolute;
-    right: 10rem;
-    top: 10rem;
-    transform: translate(20%, 100%); }
-  .center__oval__logo-3 {
-    width: 10rem;
-    height: 10rem;
-    background-color: #ececec;
-    border-radius: 50%;
-    padding: 1.5rem;
-    position: absolute;
-    right: 15rem;
-    top: 10rem;
-    transform: translate(-180%, 150%);
-    border: none; }
-  .center__oval__logo-4 {
-    width: 10rem;
-    height: 10rem;
-    background-color: #ececec;
-    border-radius: 50%;
-    padding: 1.5rem;
-    position: absolute;
-    right: 45rem;
-    top: 10rem;
-    transform: translate(-140%, 110%);
-    border: none; }
-  .center__oval__left__btn {
-    width: 3rem;
-    height: 3rem;
-    background-color: #f1ba04;
-    border-radius: 50%;
-    position: absolute;
-    padding: 1rem;
-    right: 42rem;
-    top: 23.5rem;
-    transform: translate(-170%, 150%); }
-    .center__oval__left__btn:hover {
-      background-color: #cacaca; }
-  .center__oval__right__btn {
-    width: 3rem;
-    height: 3rem;
-    background-color: #f1ba04;
-    border-radius: 50%;
-    position: absolute;
-    padding: 1rem;
-    right: 21rem;
-    top: 23.5rem;
-    transform: translate(-170%, 150%); }
-    .center__oval__right__btn:hover {
-      background-color: #cacaca; }
+    border: 0.5rem solid var(--color-cyan-3); }
+    .slider .hi-slide .hi-next {
+      width: 3rem;
+      height: 3rem;
+      background-color: gray;
+      border-radius: 50%;
+      position: absolute;
+      padding: 1rem;
+      right: 48rem;
+      top: 22.5rem;
+      transform: translate(-170%, 150%); }
+      .slider .hi-slide .hi-next::before {
+        content: '';
+        position: absolute;
+        top: 3px; }
+      .slider .hi-slide .hi-next:hover, .slider .hi-slide .hi-next:focus {
+        background-color: #ff7606; }
+      .slider .hi-slide .hi-next img {
+        position: absolute;
+        top: 5px; }
+    .slider .hi-slide .hi-prev {
+      width: 3rem;
+      height: 3rem;
+      background-color: gray;
+      border-radius: 50%;
+      position: absolute;
+      padding: 1rem;
+      right: 24rem;
+      top: 22.5rem;
+      transform: translate(-170%, 150%); }
+      .slider .hi-slide .hi-prev::before {
+        content: '';
+        position: absolute;
+        top: 1.5px; }
+      .slider .hi-slide .hi-prev:hover, .slider .hi-slide .hi-prev:focus {
+        background-color: #ff7606; }
+      .slider .hi-slide .hi-prev img {
+        position: absolute;
+        top: 5px; }
+  .slider .caption {
+    margin: 10rem auto;
+    padding: 2rem;
+    width: 60vw;
+    height: 20vh;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    align-content: center; }
+    .slider .caption p {
+      font-size: 1.8rem;
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 2rem; }
 
 footer {
   width: 100%;
   height: 100%;
   background-color: whitesmoke; }
+  footer .bimsa-footer {
+    display: block;
+    position: absolute;
+    right: 700px; }
   footer .my-svg {
     display: block;
     position: relative; }
