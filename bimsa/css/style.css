@@ -144,9 +144,7 @@ li {
   width: 25rem;
   color: white;
   text-align: center;
-  position: absolute;
-  bottom: 85rem;
-  left: 40rem; }
+  margin: 0 35%; }
   .blue-btn-submit:hover {
     background-color: var(--color-cyan-3); }
 
@@ -335,9 +333,7 @@ li {
 .main__panel_table {
   height: 30rem;
   width: 60rem;
-  position: absolute;
-  top: 55rem;
-  right: 20rem; }
+  margin: 0 auto; }
   .main__panel_table td {
     padding: .5rem; }
   .main__panel_table label {
@@ -364,6 +360,34 @@ li {
     stroke: var(--color-cyan-3);
     stroke-width: 2; }
 
+.scrollMidsection {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  bottom: 150px;
+  transform: translate(50%, 50%);
+  z-index: 1000;
+  cursor: pointer; }
+  .scrollMidsection img {
+    position: fixed;
+    right: 1.1rem;
+    top: 1rem; }
+
+#scrolltop {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  right: 47%;
+  transform: translate(0, -120px);
+  cursor: pointer; }
+  #scrolltop img {
+    position: fixed;
+    right: 1.1rem;
+    top: 1rem; }
+
 .slider {
   height: 85vh; }
   .slider .hi-slide {
@@ -383,7 +407,8 @@ li {
       padding: 1rem;
       right: 48rem;
       top: 22.5rem;
-      transform: translate(-170%, 150%); }
+      transform: translate(-170%, 150%);
+      cursor: pointer; }
       .slider .hi-slide .hi-next::before {
         content: '';
         position: absolute;
@@ -402,7 +427,8 @@ li {
       padding: 1rem;
       right: 24rem;
       top: 22.5rem;
-      transform: translate(-170%, 150%); }
+      transform: translate(-170%, 150%);
+      cursor: pointer; }
       .slider .hi-slide .hi-prev::before {
         content: '';
         position: absolute;
@@ -433,7 +459,7 @@ footer {
   footer .bimsa-footer {
     display: block;
     position: absolute;
-    right: 700px; }
+    right: 720px; }
   footer .my-svg {
     display: block;
     position: relative; }
@@ -449,7 +475,10 @@ footer {
         font-size: 1.8rem;
         line-height: 1.8;
         color: white;
-        margin: 0 20rem; }
+        margin: 0 20rem;
+        flex: auto; }
+        footer .main__footer-panels span:hover {
+          transform: scale(1.1); }
       footer .main__footer-panels temp-logos {
         background-color: blue; }
       footer .main__footer-panels img temp-logo {

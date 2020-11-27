@@ -233,9 +233,13 @@
     &_table{
         height: 30rem;
         width: 60rem;
-        position: absolute;
-        top: 55rem;
-        right: 20rem;
+        // position: absolute;
+        // top: 55rem;
+        // right: 20rem;
+        // vertical-align: center;
+        // position: relative;
+        margin: 0 auto;
+
         td{
             padding: .5rem;
         }
@@ -270,6 +274,38 @@
         // }
     }
 }
+
+.scrollMidsection{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    bottom: 150px;
+    transform: translate(50%,50%);
+    z-index: 1000;
+    cursor: pointer;
+    img{
+        position: fixed;
+        right:1.1rem;
+        top:1rem;
+    }
+
+}
+#scrolltop{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 47%;
+    transform: translate(0,-120px);
+    cursor: pointer;
+    img{
+        position: fixed;
+        right:1.1rem;
+        top:1rem;
+    }
+}
 .slider{
     height: 85vh;
 
@@ -291,6 +327,7 @@
             right:48rem;
             top: 22.5rem;
             transform: translate(-170%, 150%);
+            cursor: pointer;
             &::before { 
                 content: ''; 
                 position: absolute;
@@ -316,6 +353,7 @@
             right:24rem;
             top: 22.5rem;
             transform: translate(-170%, 150%);
+            cursor: pointer;
             &::before { 
                 content: ''; 
                 position: absolute;
@@ -340,6 +378,7 @@
         background-color: #f7f7f7;
         border-radius: 20px;
         align-content: center;
+
         p{
             font-size: 1.8rem;
             font-weight: 200;
@@ -357,10 +396,8 @@ footer{
     background-color: whitesmoke;
     .bimsa-footer{
         display: block;
-        // margin: auto;
-        // margin-bottom: -150px;
         position: absolute;
-        right: 700px;
+        right: 720px;
     }
     .my-svg{
         display: block;
@@ -379,6 +416,10 @@ footer{
                 line-height: 1.8;
                 color: white;
                 margin: 0 20rem;
+                flex: auto;
+            &:hover{
+                transform: scale(1.1);
+            }
             }
             temp-logos{
                 background-color: blue;

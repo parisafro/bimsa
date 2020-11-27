@@ -41,9 +41,11 @@
     width: 25rem;
     color: white;
     text-align: center;
-    position: absolute;
-    bottom: 85rem;
-    left: 40rem;
+    // position: absolute;
+    // bottom: 85rem;
+    // left: 40rem;
+    margin:0 35% ;
+
     &:hover{
         background-color: var(--color-cyan-3);
     }

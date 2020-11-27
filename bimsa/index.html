@@ -61,11 +61,12 @@
                                     </a>
                                 </button>
                             </li>
-        
-                            <a class="nav__profile">
-                                <img class="nav__profile-img" src="./img/person-1.png" alt="profile">
-                                <span class="nav__profile-text">حساب کاربری</span>
-                            </a>
+                            <li>
+                                <a class="nav__item nav__profile">
+                                    <img class="nav__profile-img" src="./img/person-1.png" alt="profile">
+                                    <span class="nav__profile-text">حساب کاربری</span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="landing__img-log">
@@ -154,6 +155,9 @@
                         </tbody>
                     </table>
                     </div>
+                    <div>
+                        <img  class="scrollMidsection" src="./img/up-arrow-4.png" alt="">
+                    </div>
                     <div class="landing__two-circles">
                         <div class="circle_right">
                             <a href="#">
@@ -231,13 +235,10 @@
                                     </td>
                                     <td>
                                         <label for="fisrt-input">نحوه ی تکرار </label>
-                                        <input list="insurance-type" name="fisrt-input" id="fisrt-input" placeholder="نوع بیمه را انتخاب کنید">
+                                        <input list="insurance-type" name="fisrt-input" id="fisrt-input" placeholder="نحوه ی تکرار بیمه را انتخاب کنید">
                                         <datalist id="insurance-type">
-                                            <option value="درمانی">
-                                            <option value="آتش سوزی">
-                                            <option value="حوادث">
-                                            <option value="ماشین">
-                                            <option value="شخص ثالث">
+                                            <option value="ماهیانه">
+                                            <option value="سالیانه">
                                         </datalist>
                                     </td>
                                     <td>
@@ -304,9 +305,21 @@
                             <ul>
                                 <li>
                                     <img src="./img/NoPath - Copy (54)@2x.png" alt="">
+                                    <div class="caption">
+                                        <p>
+                                         بیمه دی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+                                        </p>
+                                        <button class="btn blue-btn-one">صفحه ی بیمه</button>
+                                    </div>
                                 </li>
                                 <li>
                                     <img src="./img/NoPath - Copy (62).png" alt="">
+                                    <div class="caption">
+                                        <p>
+                                         بیمه مسهن با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+                                        </p>
+                                        <button class="btn blue-btn-one">صفحه ی بیمه</button>
+                                    </div>
                                 </li>
                                 <li>
                                     <img src="./img/NoPath - Copy (63).png" alt="">
@@ -327,12 +340,15 @@
                         </div>
                         <div class="caption">
                             <p>
-                            بیمه دی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
+                             بیمه دی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه شخص ثالث و بدنه، بیمه مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
                             </p>
                             <button class="btn blue-btn-one">صفحه ی بیمه</button>
                         </div>
                     </div>
                 </div>
+                <a id="scrolltop">
+                    <img src="./img/up-arrow-10.png" alt="">
+                </a>
             </div>
         </section>
         <footer>
@@ -432,7 +448,14 @@
                 <p>تمام حقوق این سایت متعلق به شرکت بیمسا است.</p>
             </div>
         </footer>
+        <script>
+            function scrolltop(){
+                window.scrollTo(0, 0);
+            }
+        </script>
+        <script src="js/scrolltop.js"></script>
         <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="jquery-2.1.3.min.js"></script>
         <script src="js/jquery.hislide.js"></script>
         <script>
             $('.hi-slide').hiSlide();
