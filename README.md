@@ -1,5 +1,5 @@
 # Bimsa
-This is a sample of insurance website named it 'Bimsa'
+This is a sample of insurance website that I named it 'Bimsa'
 
 # Bimsa Features
 
